@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(233, 222, 222);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding-top: 30px;
+}
+header {
+  border-bottom: 2px dashed black;
+}
+header p {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+nav > ul {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+nav > ul > a {
+  width: 100px;
+  list-style: none;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+nav > ul > a:hover {
+  background-color: rgb(221, 176, 199);
+  color: #fff !important;
+}
+
+/* Main */
+main {
+  display: flex;
+}
+
+#content {
+  height: 80%;
+  width: 70%;
+  margin: 20px;
+  padding: 0;
+}
+#content .article {
+  margin: 10px;
+  border-radius: 20px;
+}
+article {
+  background-color: rgb(224, 196, 201);
+  padding: 20px;
+}
+.article > h3,
+img,
+p {
+  margin: 20px;
+}
+.article > h3 {
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.article > img {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+}
+.satu p,
+.tiga p {
+  font-size: 1.2rem;
+  text-indent: 0.5in;
+  line-height: 1.9rem;
+  text-align: justify;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.cards > .card > p {
+  font-size: 1rem;
+  color: #fff !important;
+}
+.dua > .cards > .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  padding: 10px;
+  flex-basis: auto;
+  border-radius: 10px;
+}
+.dua > .cards > .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.dua > .cards > .card > img {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.dua > .cards > .card > a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  margin-top: 5px;
+  display: block;
+}
+.dua > .cards > .card > a:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+.dua > .cards > .card > a > .container {
+  padding: 10px;
+  background-color: rgb(224, 217, 217);
+  border-radius: 10px;
+}
+.dua > .cards > .card > a > .container > h4 {
+  text-align: center;
+}
+aside {
+  width: 30%;
+  height: 350px;
+  margin: 30px 20px 20px 0;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(201, 151, 158);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+aside > h3 {
+  font-size: 2rem;
+}
+aside > img {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 130px;
+}
+aside > img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 135px;
+}
+aside > table {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+aside > p {
+  margin-top: -15px;
+}
+
+footer {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  padding-top: 20px;
+  border-top: 2px dashed black;
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  #content {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .article > img {
+    width: 70%;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border: 1px solid black;
+  }
+  .card {
+    width: 90% !important;
+    border-radius: 10px;
+  }
+  .card > img {
+    border-radius: 10px;
+  }
+  .card > a > .container {
+    border-radius: 10px;
+  }
+  aside {
+    width: 75%;
+    margin: 20px auto;
+    font-size: 1.2rem;
+  }
+  aside > h3 {
+    font-size: 2rem;
+  }
+}
